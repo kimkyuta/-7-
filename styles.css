@@ -49,9 +49,9 @@ h1 {
 
 /* 버튼 스타일 */
 .toggle-btn {
-    padding: 20px 50px;
+    padding: 10px 15px;
     font-size: 1.3rem;
-    margin: 20px;
+    margin: 15px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -71,9 +71,9 @@ h1 {
     background-color: #ffb7b2;
 }
 .kakao-btn {
-    padding: 20px 50px;
+    padding: 10px 15px;
     font-size: 1.3rem;
-    margin: 20px;
+    margin: 15px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
