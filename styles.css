@@ -1,0 +1,170 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* 게임 컨테이너 스타일 */
+.game-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* 제목 스타일 */
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 전자시계 디스플레이 스타일 */
+.timer-display {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin: 2rem 0;
+    font-family: 'Courier New', monospace;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 3px;
+}
+
+/* 버튼 스타일 */
+.toggle-btn {
+    padding: 20px 50px;
+    font-size: 1.3rem;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #a8e6cf;
+    color: #2d2d2d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.toggle-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-btn.running {
+    background-color: #ffb7b2;
+}
+
+/* 결과 표시 스타일 */
+.result-display {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: #ffd3b6;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+/* 랭킹 보드 스타일 */
+.ranking-board {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fdffb6;
+    border-radius: 15px;
+}
+
+.ranking-board h2 {
+    color: #4a4a4a;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#rankingList {
+    list-style-position: inside;
+    padding: 0;
+    text-align: left;
+}
+
+.rank-item {
+    padding: 1rem;
+    margin: 0.7rem 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.rank-item:hover {
+    transform: translateX(10px);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 게임 설명 스타일 */
+.game-description {
+    color: #666;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+/* 보너스 정보 스타일 */
+#bonusInfo {
+    color: #e84393;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* 등수 오버레이 스타일 */
+.rank-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.rank-message {
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+    animation: rankPulse 2s infinite;
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.2);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@keyframes rankPulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+} 
