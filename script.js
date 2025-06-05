@@ -15,10 +15,10 @@ const gokakaoBtn = document.getElementById('gokakaoBtn');         // 카카오�
 // 각 등수의 기준과 메시지를 정해요
 const rankCriteria = [
     { diff: 0, message: "🎯 완벽한 1등! 정확히 7초예요!", color: '#FFD700' },
-    { diff: 0.05, message: "🥈 2등! 0.05초 차이! 대단해요!", color: '#C0C0C0' },
-    { diff: 0.1, message: "🥉 3등! 0.1초 차이! 잘했어요!", color: '#CD7F32' },
-    { diff: 0.3, message: "✨ 4등! 0.3초 차이! 좋아요!", color: '#B87333' },
-    { diff: 1.0, message: "🌟 5등! 1초 이내! 잘했어요!", color: '#A95C68' }
+    { diff: 0.05, message: "🥈 2등! 0.05초 차이! 대단해요!", color: '#FFFFFF' },
+    { diff: 0.1, message: "🥉 3등! 0.1초 차이! 잘했어요!", color: '#FFFFFF' },
+    { diff: 0.3, message: "✨ 4등! 0.3초 차이! 좋아요!", color: '#FFFFFF' },
+    { diff: 1.0, message: "🌟 5등! 1초 이내! 잘했어요!", color: '#FFFFFF' }
 ];
 
 // 버튼을 클릭했을 때 실행될 함수를 연결해요
@@ -111,7 +111,7 @@ function showRankCelebration(rank) {
     // 폭죽 효과를 설정해요
     const duration = 5000;  // 5초 동안 폭죽이 터져요
     const animationEnd = Date.now() + duration;
-    const colors = [rankCriteria[rank].color, '#ffffff', '#ffeb3b'];
+    const colors = [rankCriteria[rank].color, '#DAD9FF', '#FAECC5'];
     
     // 폭죽을 계속 터트려요
     const interval = setInterval(function() {
