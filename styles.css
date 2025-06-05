@@ -70,7 +70,28 @@ h1 {
 .toggle-btn.running {
     background-color: #ffb7b2;
 }
+.kakao-btn {
+    padding: 20px 50px;
+    font-size: 1.3rem;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #FFFF24;
+    color: #2d2d2d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
 
+.kakao-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kakao-btn.running {
+    background-color: #ffb7b2;
+}
 /* 결과 표시 스타일 */
 .result-display {
     margin: 1.5rem 0;

@@ -10,6 +10,7 @@ const lastResult = document.getElementById('lastResult');       // 결과를 보
 const bonusInfo = document.getElementById('bonusInfo');        // 보너스 정보를 보여주는 곳
 const rankOverlay = document.getElementById('rankOverlay');    // 등수를 크게 보여주는 화면
 const rankMessage = rankOverlay.querySelector('.rank-message'); // 등수 메시지
+const gokakaoBtn = document.getElementById('gokakaoBtn');         // 카카오톡 채널 이동 버튼
 
 // 각 등수의 기준과 메시지를 정해요
 const rankCriteria = [
@@ -22,7 +23,12 @@ const rankCriteria = [
 
 // 버튼을 클릭했을 때 실행될 함수를 연결해요
 toggleBtn.addEventListener('click', toggleGame);
+gokakaoBtn.addEventListener('click', goKakao);
 
+// 카카오톡 채널 이동
+function goKakao() {
+    window.open('http://pf.kakao.com/_xgpxips', '_blank');
+}
 // 게임을 시작하거나 멈추는 함수예요
 function toggleGame() {
     if (!isRunning) {
