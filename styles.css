@@ -53,7 +53,7 @@ h1 {
     font-size: 1.3rem;
     margin: 15px;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     background-color: #a8e6cf;
@@ -75,7 +75,7 @@ h1 {
     font-size: 1.3rem;
     margin: 15px;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     background-color: #FFFF24;
